@@ -1,0 +1,41 @@
+.border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: 1rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: conic-gradient(#ff0052 20deg, transparent 120deg);
+    z-index: -1;
+    animation: bordering 2s linear infinite;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: inherit;
+    background: rgb(112, 206, 230);
+    z-index: -1;
+  }
+}
+
+@keyframes bordering {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}

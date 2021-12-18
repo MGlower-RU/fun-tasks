@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import AnimBorder from './components/AnimBorder';
+import CardHovering from './components/CardHovering';
+import ClipPath from './components/ClipPath';
+import MapPolyfill from './components/MapPolyfill';
+import Rain from './components/Rain';
+import './styles/App.scss';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <MapPolyfill /> */}
+      {/* <ClipPath /> */}
+      {/* <AnimBorder /> */}
+      {/* <Rain /> */}
+      {/* <CardHovering /> */}
     </div>
   );
 }
-
-export default App;
