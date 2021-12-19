@@ -13,6 +13,7 @@ export default function App() {
       {/* <AnimBorder /> */}
       {/* <Rain /> */}
       {/* <CardHovering /> */}
+      {/* <Rain particlesNumber={50} /> */}
     </div>
   );
 }
