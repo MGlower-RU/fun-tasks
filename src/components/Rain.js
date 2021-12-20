@@ -2,15 +2,17 @@ import { useEffect, useRef, useState } from 'react'
 import '../styles/rain.scss'
 
 export default function Rain({particlesNumber}) {
-  const [rainContainerBoundings, setrainContainerBoundings] = useState({width: 0, height: 0});
+  const [rainContainerBoundings, setRainContainerBoundings] = useState({width: 0, height: 0});
   const rainContainer = useRef();
 
   useEffect(() => {
-    rainContainer.current && setrainContainerBoundings({
-      width: rainContainer.current.getBoundingClientRect().width,
-      height: rainContainer.current.getBoundingClientRect().height
+    const { current } = rainContainer
+
+    current && setRainContainerBoundings({
+      width: current.getBoundingClientRect().width,
+      height: current.getBoundingClientRect().height
     })
-  }, [])
+  }, [rainContainer])
 
   return (
     <div className="rain" ref={rainContainer}>

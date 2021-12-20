@@ -3,6 +3,7 @@ import CardHovering from './components/CardHovering';
 import ClipPath from './components/ClipPath';
 import MapPolyfill from './components/MapPolyfill';
 import Rain from './components/Rain';
+import WritingText from './components/WritingText';
 import './styles/App.scss';
 
 export default function App() {
@@ -13,7 +14,8 @@ export default function App() {
       {/* <AnimBorder /> */}
       {/* <Rain /> */}
       {/* <CardHovering /> */}
-      {/* <Rain particlesNumber={50} /> */}
+      {/* <Rain particlesNumber={100} /> */}
+      {<WritingText text={'Hello world'} />}
     </div>
   );
 }

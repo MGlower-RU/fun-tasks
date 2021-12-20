@@ -1,0 +1,54 @@
+:root {
+  --typewriterSpeed: 2750ms;
+  --typewriterCharacters: 11;
+}
+
+.writing-text {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: rgb(163, 163, 163);
+  font-weight: 300;
+  font-size: 6.4rem;
+  line-height: 1.4em;
+  padding-right: .4rem;
+  width: max-content;
+  font-family: "Source Code Pro", monospace;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 80%;
+    width: .3rem;
+    background-color: rgb(163, 163, 163);
+    animation:
+    writing .8s .5s linear infinite,
+    typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+  }
+}
+
+@keyframes writing {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
