@@ -6,6 +6,7 @@ import MapPolyfill from './components/MapPolyfill';
 import Rain from './components/Rain';
 import ResizableBlock from './components/ResizableBlock';
 import WritingText from './components/WritingText';
+import InfiniteScrolling from './components/InfiniteScrolling';
 
 import './styles/App.scss';
 
@@ -20,7 +21,8 @@ export default function App() {
       {/* <Rain particlesNumber={100} /> */}
       {/* {<WritingText text={'Hello world'} />} */}
       {/* {<ResizableBlock />} */}
-      <ContextMenu />
+      {/* <ContextMenu /> */}
+      <InfiniteScrolling />
     </div>
   );
 }

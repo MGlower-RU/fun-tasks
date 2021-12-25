@@ -7,5 +7,7 @@
 - ~~card-hovering with hidden text~~
 - ~~typewriter animation~~
 - ~~custom context-menu~~
-- mouse events
+- intersection observer
+  - ~~infinite scrolling~~
+  - lazy loading
 - resizable menu(badly done)
