@@ -9,5 +9,5 @@
 - ~~custom context-menu~~
 - intersection observer
   - ~~infinite scrolling~~
-  - lazy loading
+  - ~~lazy loading~~
 - resizable menu(badly done)

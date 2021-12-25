@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import AnimBorder from './components/AnimBorder';
 import CardHovering from './components/CardHovering';
 import ClipPath from './components/ClipPath';
@@ -9,6 +10,7 @@ import WritingText from './components/WritingText';
 import InfiniteScrolling from './components/InfiniteScrolling';
 
 import './styles/App.scss';
+import OwnLazy from './components/OwnLazy';
 
 export default function App() {
   return (
@@ -19,10 +21,11 @@ export default function App() {
       {/* <Rain /> */}
       {/* <CardHovering /> */}
       {/* <Rain particlesNumber={100} /> */}
-      {/* {<WritingText text={'Hello world'} />} */}
-      {/* {<ResizableBlock />} */}
+      {/* <WritingText text={'Hello world'} /> */}
+      {/* <ResizableBlock /> */}
       {/* <ContextMenu /> */}
-      <InfiniteScrolling />
+      {/* <InfiniteScrolling /> */}
+      <OwnLazy />
     </div>
   );
 }
