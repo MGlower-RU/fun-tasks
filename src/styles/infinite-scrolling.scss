@@ -6,6 +6,7 @@
   background-color: rebeccapurple;
   padding: 10rem 5rem;
   gap: 2rem;
+  overflow: hidden;
 
   &__el {
     display: flex;
@@ -19,5 +20,32 @@
     border-radius: 1rem;
     height: 20rem;
     background-color: rgb(99, 204, 223);
+
+    &:last-child {
+      &:nth-child(odd) {
+        animation: translateLeft .2s linear forwards;
+      }
+      &:nth-child(even) {
+        animation: translateRight .2s linear forwards;
+      }
+    }
+  }
+}
+
+@keyframes translateLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes translateRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
