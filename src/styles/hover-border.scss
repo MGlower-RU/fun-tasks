@@ -1,0 +1,112 @@
+.borders {
+  --border-size: .4rem;
+  --anim-duration: .24s;
+  --border-color: rgb(0, 152, 179);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  min-width: 20rem;
+  width: 100%;
+
+  [class|='border'] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: transparent;
+    padding: var(--border-size);
+    cursor: pointer;
+
+    span {
+      background-color: rgb(0, 217, 255);
+      padding: 1rem 2rem;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      transition: all var(--anim-duration) linear;
+    }
+
+    &:hover {
+      &::after,
+      &::before {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.border-1 {
+  &::after,
+  &::before {
+    width: var(--border-size);
+    height: var(--border-size);
+    background-color: var(--border-color);
+    z-index: -1;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+  }
+
+  &::before {
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.border-2 {
+  &::after,
+  &::before {
+    width: 0;
+    height: 0;
+    border: calc(var(--border-size)/2) solid var(--border-color);
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+  }
+
+  &::before {
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.borders .border-3 {
+  overflow: hidden;
+
+  &::after {
+    width: 100%;
+    aspect-ratio: 1;
+    z-index: -1;
+    background: conic-gradient(orange, yellow, green, rgb(0, 225, 255), blue, purple);
+  }
+
+  &:hover {
+    &::after {
+      height: unset;
+      animation: conic-gradient-border 1s linear infinite;
+    }
+  }
+}
+
+@keyframes conic-gradient-border {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

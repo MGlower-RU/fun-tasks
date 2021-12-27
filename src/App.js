@@ -8,9 +8,13 @@ import Rain from './components/Rain';
 import ResizableBlock from './components/ResizableBlock';
 import WritingText from './components/WritingText';
 import InfiniteScrolling from './components/InfiniteScrolling';
+import OwnLazy from './components/OwnLazy';
+import HoverBorder from './components/HoverBorder';
+import MovingImage from './components/MovingImage';
 
 import './styles/App.scss';
-import OwnLazy from './components/OwnLazy';
+
+import CanyonLake from './images/card_hovering.jpg'
 
 export default function App() {
   return (
@@ -25,7 +29,9 @@ export default function App() {
       {/* <ResizableBlock /> */}
       {/* <ContextMenu /> */}
       {/* <InfiniteScrolling /> */}
-      <OwnLazy />
+      {/* <OwnLazy /> */}
+      {/* <HoverBorder /> */}
+      <MovingImage src={CanyonLake} />
     </div>
   );
 }

@@ -3,7 +3,7 @@
 - ~~map polyfill~~
 - ~~clip-path~~
 - ~~animated-border~~
-- ~~rain(from random array length)~~
+- ~~rain~~
 - ~~card-hovering with hidden text~~
 - ~~typewriter animation~~
 - ~~custom context-menu~~
@@ -11,3 +11,5 @@
   - ~~infinite scrolling~~
   - ~~lazy loading~~
 - resizable menu(badly done)
+- ~~image zoom moving~~
+- ~~hover border animations~~
