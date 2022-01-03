@@ -13,3 +13,6 @@
 - resizable menu(badly done)
 - ~~image zoom moving~~
 - ~~hover border animations~~
+- ~~flipping card animation~~
+- CPS meter
+- color contraster

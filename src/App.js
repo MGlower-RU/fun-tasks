@@ -15,10 +15,13 @@ import MovingImage from './components/MovingImage';
 import './styles/App.scss';
 
 import CanyonLake from './images/card_hovering.jpg'
+import FlippingCard from './components/FlippingCard';
 
 export default function App() {
   return (
     <div className="App">
+      {/* ***** _UNCOMMENT TO USE_ ***** */}
+
       {/* <MapPolyfill /> */}
       {/* <ClipPath /> */}
       {/* <AnimBorder /> */}
@@ -31,7 +34,8 @@ export default function App() {
       {/* <InfiniteScrolling /> */}
       {/* <OwnLazy /> */}
       {/* <HoverBorder /> */}
-      <MovingImage src={CanyonLake} />
+      {/* <MovingImage src={CanyonLake} /> */}
+      <FlippingCard />
     </div>
   );
 }
