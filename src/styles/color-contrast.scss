@@ -1,0 +1,17 @@
+.color-contrast {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  min-height: 60vh;
+  gap: 2rem;
+  padding: 4rem 2rem;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: .5rem;
+  }
+}

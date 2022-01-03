@@ -10,9 +10,9 @@
 - intersection observer
   - ~~infinite scrolling~~
   - ~~lazy loading~~
-- resizable menu(badly done)
+- ~~resizable menu(badly done)~~
 - ~~image zoom moving~~
 - ~~hover border animations~~
 - ~~flipping card animation~~
 - ~~CPS meter~~
-- color contraster
+- ~~color contraster~~

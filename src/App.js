@@ -17,6 +17,7 @@ import './styles/App.scss';
 import CanyonLake from './images/card_hovering.jpg'
 import FlippingCard from './components/FlippingCard';
 import CPSmeter from './components/CPSmeter';
+import ColorContrast from './components/ColorContrast';
 
 export default function App() {
   return (
@@ -37,7 +38,8 @@ export default function App() {
       {/* <HoverBorder /> */}
       {/* <MovingImage src={CanyonLake} /> */}
       {/* <FlippingCard /> */}
-      <CPSmeter />
+      {/* <CPSmeter /> */}
+      <ColorContrast />
     </div>
   );
 }
