@@ -16,6 +16,7 @@ import './styles/App.scss';
 
 import CanyonLake from './images/card_hovering.jpg'
 import FlippingCard from './components/FlippingCard';
+import CPSmeter from './components/CPSmeter';
 
 export default function App() {
   return (
@@ -35,7 +36,8 @@ export default function App() {
       {/* <OwnLazy /> */}
       {/* <HoverBorder /> */}
       {/* <MovingImage src={CanyonLake} /> */}
-      <FlippingCard />
+      {/* <FlippingCard /> */}
+      <CPSmeter />
     </div>
   );
 }
